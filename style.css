@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#09203f, #537895);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    background-color: #dfe9f3;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #09203f;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px;
+}
+
+.error-msg{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: none;
+}
+
+.error-msg.visible{
+    display: block;
+}
+.row button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 30px;
+    background: #6a82fb;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.row button:hover{
+    transform: scale(1.05);
+}
+ul{
+    /* background-color: red; */
+    list-style: none;
+    border-radius: 5px;
+    padding: 0 4%;
+    margin-top: 2%;
+    /* border: 1px solid #09203f; */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 80%;
+    border: 1px solid #ddd;
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+    /* background-color: #fff; */
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:hover{
+    border-radius: 5px;
+    background-color: #0c1b30;
+    opacity: 1;
+    transform: scale(1.01);
+    transition: background-color 1.4s ease;
+}
+
+ul img{
+    max-width: 25px;
+    cursor: pointer;
+}
+
+ul li button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+ul span{
+    flex: 1;
+    padding: 10px;
+    word-break: break-word;
+}
